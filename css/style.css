@@ -2,11 +2,51 @@
 h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 5em;
+    font-size: 3.8em;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 3.1em;
+    margin-bottom: .5em;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
+}
+
+.jumbotron-home {
+    background-color:#312A2C;
+    color:#fff;
+    border-radius: 0;
+    min-height:69vh;
+}
+
+.block {
+    
+}
+
+.block__intro {
+    background-color: #231F20;
+    color:fff;
+}
+
+.img-master {
+    width:100%;
+    height:auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+    border-radius: 16px;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top:-69px;
+}
+
+@media (max-width:768px){
+    .img-master {
+        margin-top:30px;
+    }  
 }
