@@ -279,7 +279,7 @@ a.text-orange:hover {
 }
 
 @media (max-width:767px) {
-    .modal-app .modal-content {
+    .modal-app .modal-dialog {
         width: 320px;
     }
 }
@@ -305,6 +305,6 @@ a.text-orange:hover {
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.app-screenshots img{
+.app-screenshots img {
     background-color: #d8d8d8;
 }
