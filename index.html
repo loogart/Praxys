@@ -13,35 +13,39 @@
 
 <body>
 
-    <nav class="navbar navbar-toggleable-md sticky-top navbar-inverse py-2" style="background-color:#231F20;">
+    <nav class="navbar navbar-toggleable-md sticky-top navbar-inverse py-3" style="background-color:#231F20;">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-            <a class="navbar-brand" href="#">Praxys</a>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" height="30" class="d-inline-block align-top" alt="">
+            </a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-3 active">
-                        <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
+                <ul class="navbar-nav ml-auto text-uppercase">
                     <li class="nav-item mx-3 dropdown">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      FR
+                      Products
                     </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Booky</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <button class="btn btn-outline-secondary text-uppercase" data-toggle="modal" data-target="#myModal">Login</button>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">FR</a>
+                    </li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -51,7 +55,7 @@
             <h1>Praxys</h1>
             <p>Technology built by lawyers.</p>
             <p class="lead">
-                <a class="btn btn-secondary" href="#" role="button">Become efficient</a>
+                <a class="btn btn-lg btn-praxys" href="#" role="button">Become efficient</a>
             </p>
         </div>
     </div>
@@ -59,22 +63,88 @@
     <section class="block block__intro">
         <div class="container p-5">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <h2>Lawyer’s best friend.</h2>
-                            <p>Praxys is a third-hand technology enabling lawyers to add value with their judgement and expertise.</p>
-                            <p>Building a platform allowing lawyers to gain productivity and free themselves from redundant legal tasks, allowing them to focus on solving more complex legal exercises. </p>
-                            <a class="btn btn-secondary" href="#" role="button">View our apps</a>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <img class="img-master" src="img/lawyer.jpg">
-                        </div>
-                    </div>
+                <div class="col-sm-12 col-md-6">
+                    <h2>Lawyer’s best friend.</h2>
+                    <p>Praxys is a third-hand technology enabling lawyers to add value with their judgement and expertise.</p>
+                    <p>Building a platform allowing lawyers to gain productivity and free themselves from redundant legal tasks, allowing them to focus on solving more complex legal exercises. </p>
+                    <a class="btn btn-praxys" href="#" role="button">View our apps</a>
                 </div>
+                <div class="col-sm-12 col-md-6">
+                    <img class="img-master" src="img/lawyer.jpg">
+                </div>
+
             </div>
         </div>
     </section>
+
+    <section class="block block__light">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+                    <h2>Products</h2>
+                    <p>We currently have one product on our launch platform, Booky. These tools are part of a growing number of technological applications that will enhance the lawyer’s value and productivity, eventually forming a new kind of legal assistant. </p>
+                    <div class="card-deck">
+                        <div class="card my-3">
+                            <img class="card-img-top img-fluid" src="img/booky-banner.jpg" alt="Booky App">
+                            <div class="card-block">
+                                <h4 class="card-title">Booky</h4>
+                                <p class="card-text">Digital company book that updates itself.</p>
+                            </div>
+                            <div class="card-block">
+                                <a href="#" class="card-link text-orange">Access app</a>
+                            </div>
+                        </div>
+                        <div class="card card-img-inactive my-3" style="background-color: #F0F0F0; border-color:#F0F0F0; color:#d8d8d8">
+                            <img class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">App No. 2</h4>
+                                <p class="card-text">Coming soon</p>
+                            </div>
+                        </div>
+                        <div class="card card-img-inactive my-3" style="background-color: #F0F0F0; border-color:#F0F0F0; color:#d8d8d8">
+                            <img class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">App No. 3</h4>
+                                <p class="card-text">Coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <a class="btn btn-link text-orange mt-3" href="#" role="button">View all apps</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section class="block block__footer">
+        
+        
+    </section>
+
+
+    <!-- Login popup -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
