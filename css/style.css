@@ -66,15 +66,20 @@ p {
     color: #fff;
     border-radius: 0;
     min-height: 49vh;
-    background-image: url('../img/laptops-praxys.svg');
+    background-image: url('../img/laptops-praxys.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
+/*    background-size: cover;*/
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: top -300px left -69px;
 }
 
 @media (max-width:767px) {
     .jumbotron-home {
         min-height: 69vh;
+        background-size: cover;
+        background-position:top -120px left -169px;
+        background-attachment: scroll;
     }
 }
 
